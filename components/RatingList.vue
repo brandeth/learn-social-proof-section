@@ -1,20 +1,15 @@
 <script lang="ts" setup>
-interface Rating {
-  rating: number
-  channel: string
-}
-
 const ratings = ref<Rating[]>([
   {
-    rating: 5,
+    value: 5,
     channel: 'Reviews'
   },
   {
-    rating: 5,
+    value: 5,
     channel: 'Report Guru'
   },
   {
-    rating: 5,
+    value: 5,
     channel: 'BestTech'
   },
 ])
