@@ -22,6 +22,7 @@ White: hsl(0, 0%, 100%)
   --font-size: 15px;
   --font-size-xl: 46px;
   --line-height-xl: var(--font-size-xl);
+  --line-height-lg: 1.25rem;
   --border-radius: 0.5rem;
 }
 
@@ -107,15 +108,40 @@ h6 {
 .Main {
   display: grid;
   grid-template-rows: 1fr auto;
-  padding: 1.25rem;
+  padding: 3rem 1.25rem;
   min-height: 100vh;
   width: 100%;
 }
 
 .SocialProofSection {
   width: 100%;
-  max-width: 1440px;
+  // max-width: 1440px;
+  max-width: 21rem;
   justify-self: center;
+  display: grid;
+  gap: 2.5rem;
+
+  &-cardList {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+
+  &-cardItem {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1.75rem;
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    color: var(--light-grayish-magenta);
+  }
+
+  &-header {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 2.5rem;
+  }
 
   &-ratingItem {
     display: flex;
@@ -137,7 +163,7 @@ h6 {
   &-overview {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
 
     h1 {
       text-align: center;
@@ -151,6 +177,34 @@ h6 {
     p {
       text-align: center;
       color: var(--dark-grayish-magenta);
+    }
+  }
+
+  .CardItem {
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-headerText {
+
+      h3,
+      p {
+        font-size: var(--font-size);
+        line-height: 1.25rem;
+      }
+
+      p {
+        color: var(--soft-pink);
+      }
+    }
+
+    &-headerImage {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      overflow: hidden;
     }
   }
 
