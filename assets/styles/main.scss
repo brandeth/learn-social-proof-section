@@ -116,7 +116,8 @@ h6 {
 .SocialProofSection {
   width: 100%;
   // max-width: 1440px;
-  max-width: 21rem;
+  // max-width: 21rem;
+  max-width: 28rem;
   justify-self: center;
   display: grid;
   gap: 2.5rem;
@@ -216,8 +217,66 @@ h6 {
 
     &-starContainer {
       display: flex;
-      gap: 1rem;
+      gap: 0.5rem;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 997px) {
+  .SocialProofSection {
+    // max-width: 100%;
+    max-width: 75rem;
+    padding: 2rem 4rem;
+
+    &-header {
+      grid-template-columns: 1fr 1fr;
+      gap: 12%;
+    }
+
+    &-overview {
+      padding-right: 1rem;
+
+      h1,
+      p {
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        line-height: 3.25rem;
+      }
+      p {
+        font-size: 19px;
+      }
+    }
+
+    &-ratingList {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    &-ratingItem {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: left;
+      width: 100%;
+      max-width: 26rem;
+    }
+
+    // add position relative to first ratingItem and second ratingItem
+    &-ratingItem:nth-child(1),
+    &-ratingItem:nth-child(2) {
+      position: relative;
+    }
+    &-ratingItem:nth-child(1) {
+      right: 16%;
+    }
+    &-ratingItem:nth-child(2) {
+      right: 8%;
     }
   }
 }
