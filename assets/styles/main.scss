@@ -115,7 +115,7 @@ h6 {
       url("/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-position: top 0% left 100%, bottom 0rem right 100%;
-  background-size: 40vw 40vw;
+  background-size: 100vw 40vw;
   gap: 4rem;
 
   .attribution {
@@ -142,8 +142,6 @@ h6 {
 
 .SocialProofSection {
   width: 100%;
-  // max-width: 1440px;
-  // max-width: 21rem;
   max-width: 28rem;
   justify-self: center;
   display: grid;
